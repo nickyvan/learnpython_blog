@@ -6,4 +6,5 @@
   <h3><a href="{% url 'post' Post.id %}">{{Post.title}}</a></h3>
   <h6>{{Post.date|date:"d-m-Y"}}</h6>
   <p>{{Post.body|safe|linebreaks}}</p>
+  <img src="{{Post.image.url}}" width="500px" height="auto">
 {% endblock  %}
